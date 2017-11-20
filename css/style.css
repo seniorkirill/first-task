@@ -1,52 +1,50 @@
-@font-face {
-	font-family: "Roboto-Light";
-	src: ulr(fonts/Roboto-Light.ttf);
+html {
+	position: relative;
+	min-height: 100%;
 }
 
+html,
 body {
 	height: 100%;
 }
 
 .container {
 	position: relative;
-  min-height: 100%;
+	min-height: 100%;
   background-color: #f8f8f8;
+  padding-bottom: 214px;
   width: 1200px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 }
 
-/*header*/
+
 
 header {
 	background-color: #69B7D4;
-	border-bottom: 1px solid #000;
 }
 
 .logo {
 	display: inline-block;
 	background: #69B7D4 url(../img/logo.png) no-repeat;
-	width: 352px;
-	height: 124px;
+	background-size: contain;
+	width: 235px;
+	height: 100px;
 	margin-left: 50px;
 }
-/*header end*/
-/*menu*/
-nav {
-	top: -35px;
-}
+
 .menu li {
   list-style-type: none;
 	float: left;
 	padding-right: 20px;
 	position: relative;
-	top: -95px;
+	top: -88px;
 	left: 580px;
 }
 .menu li a {
   color: #fff;
   text-shadow: 1px 1px 1px #000;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -54,8 +52,7 @@ nav {
 .menu li a:hover {
   color: red;
 }
-/*menu end*/
-/*main*/
+
 main {
 	padding-bottom: 90px;
 }
@@ -86,16 +83,27 @@ main a.btn:hover {
 	border: 1px solid #f00;
 	color: #fff;
 }
-/*section*/
+
+
+
+/*for catalog*/
+section .catalog-img {
+	float: left;
+	padding-right: 20px;
+}
+
+.notebooks-h1 {
+	margin-left: -270px;
+}
+/*for catalog end*/
+
 section .sect-product {
 	width: 300px;
 	height: 200px;
 	float: left;
 	padding: 40px;
 }
-/*section end*/
-/*main end*/
-/*description product*/
+
 section.description-product h2 {
   color: #191919;
   font-size: 20px;
@@ -108,8 +116,7 @@ section.description-product h3 {
   font-weight: 400;
   background-color: #eaeaea;
 }
-/*description product end*/
-/*detail product*/
+
 section.detail-product li {
   list-style-type: none;
   color: #484343;
@@ -117,8 +124,7 @@ section.detail-product li {
   font-weight: 400;
   text-align: left;
 }
-/*detail product end*/
-/*contact*/
+
 .contacts input[type="text"],
 .contacts input[type="email"] {
   width: 200px;
@@ -134,11 +140,6 @@ section.detail-product li {
   background-color: yellow;
 }
 
-.contacts label {
-  display: inline-block;
-  width: 150px;
-}
-
 .contacts textarea {
   width: 200px;
   height: 50px;
@@ -147,26 +148,39 @@ section.detail-product li {
   text-transform: capitalize;
 }
 
+.contacts-h {
+	position: relative;
+	left: -480px;
+}
 
+.address {
+	position: relative;
+	top: -43px;
+}
 
-/*contact end*/
+.contacts-form,
+.address {
+	float: left;
+	width: 500px;
+	margin: 0 auto;
+	padding-left: 100px;
+}
 
-/*footer*/
-
-.clear-footer {
-	height: 100px;
+.google-map {
+	width: 1000px;
+	margin: 0 auto;
 }
 
 footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 80px;
-	line-height: 100px;
-	border-top: 1px solid #000;
-	background-color: #439ABB;
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
 	text-align: center;
-	margin-top: -100px;
+	background-color: #439ABB;
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+	border-top: 1px solid #000;*/
 }
 
 footer span {
@@ -174,5 +188,3 @@ footer span {
 	color: #fff;
 	text-shadow: 1px 1px 1px #000;
 }
-
-/*footer end*/
